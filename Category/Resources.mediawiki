@@ -1,0 +1,3 @@
+{{#default_form: Resource}}
+
+<noinclude>[[Category:Resource package]]</noinclude>

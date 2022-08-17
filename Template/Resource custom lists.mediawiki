@@ -1,0 +1,12 @@
+<includeonly>{{#arraymap: {{{1|}}}
+  |;
+  |@
+  |<div class="resource-formfield">
+     <div class="resource-formfield-label">@</div>
+     <div class="resource-formfield-field">{{{field{{!}}@{{!}}input type=tokens{{!}}values={{#show: Property:@ |?Allows value}}{{!}}existing values only{{!}}max values=1}}}</div>
+   </div>
+  |
+}}
+</includeonly><noinclude>
+[[Category:Resource package]]
+</noinclude>

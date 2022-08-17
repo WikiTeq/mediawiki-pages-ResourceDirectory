@@ -1,0 +1,15 @@
+<noinclude>
+Quick resources filter.
+[[Category:Resource package]]
+</noinclude><includeonly>
+{{{info|query title=Resources}}}
+{{{for template|Resource query}}}
+{{{field|Resource author|hidden}}}
+{{{field|Resource type|hidden}}}
+{{{field|Resource name|hidden}}}
+{{{field|Resource category|hidden}}}
+{{{field|Resource keyword|hidden}}}
+{{Resource custom lists query|{{:Project:Resource custom lists}}}}
+{{{field|Filter|hidden}}}
+{{{end template}}}
+</includeonly>

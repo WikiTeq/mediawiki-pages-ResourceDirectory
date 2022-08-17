@@ -1,0 +1,63 @@
+<includeonly>
+<div class="resource-query">
+<div class="resource-query-body">
+{{#ask:[[Category:Resources]]
+{{#arraymap:Resource author;Resource type;Resource name;Resource category;Resource keyword;{{:Project:Resource custom lists}}
+  |;
+  |@@@
+  |{{#if: {{{@@@|}}}
+     |[[@@@::{{#replace:{{{@@@|}}}|;|{{!}}{{!}}}}]]
+   }}
+  |
+}}
+  |format=plainlist
+  |template=Resource query result row
+  |?Resource author
+  |?Resource description
+  |?Resource type
+  |?Resource name
+  |?Resource category
+  |?Resource keyword
+  |?Resource URL
+  |named args=yes
+  |link=none
+  |mainlabel=Resource
+  |limit=50
+}}
+</div>
+<div class="resource-query-infobox">
+  <div>
+    <div class="h5">Categories</div>
+      <ul>
+{{#arrayprint:categories
+  |
+  |@@@
+  |{{#ifeq: @@@|{{{{{{Filter|}}}|}}}||<li>{{#queryformlink: form=Resource query
+         |link text=@@@
+         |Resource query[Resource category]=@@@
+         |Resource query[Filter]=Resource category
+         |_run=1
+       }}</li>
+    }}
+}}
+       </ul>
+       <div class="h5">Keywords</div>
+       <ul>
+{{#arrayprint:keywords
+  |
+  |@@@
+  |{{#ifeq: @@@|{{{{{{Filter|}}}|}}}||<li>{{#queryformlink: form=Resource query
+         |link text=@@@
+         |Resource query[Resource keyword]=@@@
+         |Resource query[Filter]=Resource keyword
+         |_run=1
+       }}</li>
+    }}
+}}
+      </ul>
+    </div>
+  </div>
+</div>
+</includeonly><noinclude>
+[[Category:Resource package]]
+</noinclude>

@@ -1,0 +1,36 @@
+<noinclude>
+This is a form for advanced filtering of resource records.
+
+{{#queryformlink: form=Resource filter
+  |link text=<span class="mw-ui-button">Advanced filter</span>
+}}
+[[Category:Resource package]]
+</noinclude><includeonly>
+{{{for template|Resource filter}}}
+<div class="resource-form">
+  <div class="resource-formfield">
+    <div class="resource-formfield-label">Authors</div>
+    <div class="resource-formfield-field">{{{field|Resource author|input type=tokens|values from property=Resource author|list|delimiter=;}}}</div>
+  </div>
+  <div class="resource-formfield">
+    <div class="resource-formfield-label">Resource type</div>
+    <div class="resource-formfield-field">{{{field|Resource type|input type=tokens|values from property=Resource type|list|delimiter=;}}}</div>
+  </div>
+  <div class="resource-formfield">
+    <div class="resource-formfield-label">Resource name</div>
+    <div class="resource-formfield-field">{{{field|Resource name|input type=tokens|values from property=Resource name|list|delimiter=;}}}</div>
+  </div>
+  <div class="resource-formfield">
+    <div class="resource-formfield-label">Categories</div>
+    <div class="resource-formfield-field">{{{field|Resource category|input type=tokens|values from property=Resource category|list|delimiter=;}}}</div>
+  </div>
+  <div class="resource-formfield">
+    <div class="resource-formfield-label">Keywords</div>
+    <div class="resource-formfield-field">{{{field|Resource keyword|input type=tokens|values from property=Resource keyword|list|delimiter=;}}}</div>
+  </div>
+{{Resource custom lists|{{:Project:Resource custom lists}}}}
+</div>
+{{{end template}}}
+
+{{{standard input|run query|label=Search}}}
+</includeonly>

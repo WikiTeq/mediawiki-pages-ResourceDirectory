@@ -1,0 +1,27 @@
+<includeonly><!--
+
+-->{{#subobject:
+     |Resource author={{{Resource author|}}}
+     |Resource author info={{{Resource author info|}}}
+    }}<!--
+
+-->{{#set: 
+     |Resource author={{{Resource author|}}}
+   }}<!--
+
+--><div class="resource-card-author"><!--
+
+-->{{#queryformlink: form=Resource query
+     |link text={{{Resource author|}}}
+     |Resource query[Resource author]={{{Resource author|}}}
+     |Resource query[Filter]=Resource author
+     |_run=1
+   }}<!--
+
+-->{{#if:{{{Resource author info|}}}
+     |,&#32;{{{Resource author info|}}}
+   }}<!--
+
+--></div></includeonly><noinclude>
+[[Category:Resource package]]
+</noinclude>

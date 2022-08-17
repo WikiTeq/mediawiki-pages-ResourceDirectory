@@ -1,0 +1,121 @@
+{
+    "publisher": "PagePort",
+    "author": "PagePort",
+    "language": "en",
+    "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-ResourceDirectory",
+    "packages": {
+        "1660770722": {
+            "globalID": "1660770722",
+            "description": "",
+            "version": "0.1",
+            "pages": [
+                {
+                    "name": "Resources",
+                    "namespace": "NS_CATEGORY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Category%2FResources.mediawiki"
+                },
+                {
+                    "name": "Resource",
+                    "namespace": "PF_NS_FORM",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Form%2FResource.mediawiki"
+                },
+                {
+                    "name": "Resource filter",
+                    "namespace": "PF_NS_FORM",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Form%2FResource%20filter.mediawiki"
+                },
+                {
+                    "name": "Resource query",
+                    "namespace": "PF_NS_FORM",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Form%2FResource%20query.mediawiki"
+                },
+                {
+                    "name": "Resource.css",
+                    "namespace": "NS_MEDIAWIKI",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/MediaWiki%2FResource.css.mediawiki"
+                },
+                {
+                    "name": "Resource custom lists",
+                    "namespace": "NS_PROJECT",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Project%2FResource%20custom%20lists.mediawiki"
+                },
+                {
+                    "name": "Level",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FLevel.mediawiki"
+                },
+                {
+                    "name": "Resource author",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20author.mediawiki"
+                },
+                {
+                    "name": "Resource author info",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20author%20info.mediawiki"
+                },
+                {
+                    "name": "Resource category",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20category.mediawiki"
+                },
+                {
+                    "name": "Resource description",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20description.mediawiki"
+                },
+                {
+                    "name": "Resource keyword",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20keyword.mediawiki"
+                },
+                {
+                    "name": "Resource name",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20name.mediawiki"
+                },
+                {
+                    "name": "Resource type",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20type.mediawiki"
+                },
+                {
+                    "name": "Resource",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource.mediawiki"
+                },
+                {
+                    "name": "Resource authors",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20authors.mediawiki"
+                },
+                {
+                    "name": "Resource custom lists",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20custom%20lists.mediawiki"
+                },
+                {
+                    "name": "Resource custom lists query",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20custom%20lists%20query.mediawiki"
+                },
+                {
+                    "name": "Resource filter",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20filter.mediawiki"
+                },
+                {
+                    "name": "Resource query",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20query.mediawiki"
+                },
+                {
+                    "name": "Resource query result row",
+                    "namespace": "NS_TEMPLATE",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20query%20result%20row.mediawiki"
+                }
+            ],
+            "requiredExtensions": []
+        }
+    }
+}

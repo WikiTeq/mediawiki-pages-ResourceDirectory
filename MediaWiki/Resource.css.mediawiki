@@ -1,0 +1,114 @@
+#pfForm .resource-form .select2-container {
+	width: 100% !important;
+	min-height: 36px;
+
+}
+#pfForm .resource-form .pfTokens {
+	min-width: 100% !important;
+	margin-bottom: 0 !important;
+}
+.resource-card {
+	margin-top: 1rem;
+}
+.resource-card-authors {
+	display: flex;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+}
+.resource-card-row {
+	display: flex;
+}
+.resource-card-row-label {
+	font-weight: bold;
+	flex: 0 0 130px;
+}
+.resource-card-author:last-of-type:not(:first-of-type)::before {
+	content: '\00a0 and\00a0';
+}
+.resource-card-author:not(:last-of-type):not(:first-of-type)::before {
+	content: ',\00a0';
+}
+.page-Special_RunQuery_Resource_query .pf-runquery-formcontent {
+	display: none;
+}
+.resource-query {
+	display: flex;
+}
+.resource-query-body {
+	padding-right: 2rem;
+}
+.resource-query-infobox {
+	display: flex;
+	min-width: 300px;
+	padding-left: 1.5rem;
+}
+.resource-query-result-wrapper {
+	margin: 1rem 0;
+}
+.resource-query-result {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.resource-card-source {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: .75rem;
+}
+.resource-query-result-wrapper::after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: linear-gradient(to right, #fff, #d9d9d9, #fff);
+	margin: 2rem;
+}
+.resource-query-infobox::before {
+	content: '';
+	width: 1px;
+	height: 100%;
+	display: block;
+	background: linear-gradient(to bottom, #fff, #ddd, #fff);
+	margin-right: 2rem;
+}
+.resource-query-advanced {
+	width: 270px;
+	float: right;
+}
+@media screen and ( max-width: 960px ) {
+	.resource-query {
+		flex-direction: column;
+	}
+	.resource-query-infobox {
+		min-width: unset;
+		border-left: 0;
+		padding-left: 0;
+	}
+	.resource-query-body {
+		padding: 0 !important;
+	}
+	.resource-query-result {
+		flex-direction: column;
+	}
+	.resource-card-source {
+		justify-content: space-between;
+  		width: 100%;
+		flex-direction: row-reverse;
+		margin-bottom: .5rem;
+	}
+	.resource-query-infobox::before {
+		display: none;	
+	}
+	.resource-query-advanced {
+		width: 100%;
+		display: block;
+		margin-bottom: .5rem;
+		float: none;
+		max-width: unset !important;
+	}
+}
+
+/*
+<noinclude>[[Category:Resource package]]</noinclude>
+*/

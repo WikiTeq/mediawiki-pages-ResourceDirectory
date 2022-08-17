@@ -1,0 +1,8 @@
+This is a property of type [[Has type::Text]].
+
+The allowed values for this property are:
+* [[Allows value::Basic]]
+* [[Allows value::Intermediate]]
+* [[Allows value::Advanced]]
+
+<noinclude>[[Category:Resource package]]</noinclude>

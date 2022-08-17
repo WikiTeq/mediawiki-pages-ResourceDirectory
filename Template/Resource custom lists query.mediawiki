@@ -1,0 +1,9 @@
+<includeonly>{{#arraymap: {{{1|}}}
+  |;
+  |@
+  |{{{field{{!}}@{{!}}hidden}}}
+  |
+}}
+</includeonly><noinclude>
+[[Category:Resource package]]
+</noinclude>

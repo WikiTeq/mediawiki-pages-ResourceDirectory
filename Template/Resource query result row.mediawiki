@@ -1,0 +1,47 @@
+<includeonly>
+<div class="resource-query-result-wrapper">
+<div class="h4 plainlinks">[[{{{Resource|}}}]] {{!}} [{{{Resource URL|}}} <i class="fas fa-external-link-alt"></i>]</div>
+<div class="resource-query-result">
+<div class="resource-card-authors mb-2">by&nbsp;{{#arraymap:{{{Resource author|}}}
+  |,
+  |@@@
+  |<div class="resource-card-author">{{#queryformlink: form=Resource query
+     |link text=@@@
+     |Resource query[Resource author]=@@@
+     |Resource query[Filter]=Resource author
+     |_run=1
+   }}</div>
+  |
+}}</div>
+  <div class="resource-card-source">
+    <div class="badge badge-light">{{#queryformlink: form=Resource query
+     |link text={{{Resource type|}}}
+     |Resource query[Resource type]={{{Resource type|}}}
+     |Resource query[Filter]=Resource type
+     |_run=1
+   }}</div>
+    <div>{{#queryformlink: form=Resource query
+     |link text={{{Resource name|}}}
+     |Resource query[Resource name]={{{Resource name|}}}
+     |Resource query[Filter]=Resource name
+     |_run=1
+   }}</div>
+  </div>
+</div><!--
+
+-->{{{Resource description|}}}<!--
+
+-->{{#arraydefine: categories
+     |{{{Resource category|}}},{{#arrayprint: categories|,}}
+     |,
+     |unique,sort=asc
+   }}<!--
+
+-->{{#arraydefine: keywords
+     |{{{Resource keyword|}}},{{#arrayprint: keywords|,}}
+     |,
+     |unique,sort=asc
+   }}
+</div></includeonly><noinclude>
+[[Category:Resource package]]
+</noinclude>
