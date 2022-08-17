@@ -1,12 +1,12 @@
 {
-    "publisher": "PagePort",
-    "author": "PagePort",
+    "publisher": "WikiTeq",
+    "author": "WikiTeq",
     "language": "en",
     "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-ResourceDirectory",
     "packages": {
-        "1660770722": {
+        "ResourceDirectory": {
             "globalID": "1660770722",
-            "description": "",
+            "description": "Extendable resource description and filtering",
             "version": "0.1",
             "pages": [
                 {
@@ -115,7 +115,11 @@
                     "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Template%2FResource%20query%20result%20row.mediawiki"
                 }
             ],
-            "requiredExtensions": []
+            "requiredExtensions": [
+		"SemanticMediaWiki",
+		"PageForms",
+		"Arrays"
+	    ]
         }
     }
 }
