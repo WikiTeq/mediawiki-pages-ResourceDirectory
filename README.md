@@ -27,6 +27,16 @@ $wgPageExchangePackageFiles[] = 'https://raw.githubusercontent.com/WikiTeq/media
 # Usage
 Navigate to `Form:Resource` to start adding resources. Necessary links for data query and filtering will be added automatically.
 
+# Main data structure
+* Resource URL
+* Resource type
+* Resource name
+* Resource author
+** Resource author info
+* Resource description
+* Resource category
+* Resource keyword
+
 # Custom dropdowns
 The semantic structure and the data input form can be easily extended to use custom sets of values (dropdowns). 
 
