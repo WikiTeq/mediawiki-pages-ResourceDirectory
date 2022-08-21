@@ -32,7 +32,7 @@ Navigate to `Form:Resource` to start adding resources. Necessary links for data 
 * Resource type
 * Resource name
 * Resource author
-** Resource author info
+  * Resource author info
 * Resource description
 * Resource category
 * Resource keyword
