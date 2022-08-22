@@ -6,6 +6,7 @@ This is a form for advanced filtering of resource records.
 }}
 [[Category:Resource package]]
 </noinclude><includeonly>
+{{{info|query form at top}}}
 {{{for template|Resource filter}}}
 <div class="resource-form">
   <div class="resource-formfield">
