@@ -1,6 +1,7 @@
 <includeonly>
 {{#queryformlink: form=Resource filter
   |link text=<span class="mw-ui-button resource-query-advanced">Advanced filter</span>
+  |Resource filter[{{{Filter|}}}]={{{{{{Filter|}}}|}}}
 }}
 <div class="badge badge-light p-1"><big>{{{Filter|}}}</big></div>
 <div class="h2">{{{{{{Filter|}}}|}}}</div>
