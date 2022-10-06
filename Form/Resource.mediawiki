@@ -16,16 +16,28 @@ This is a form for adding or editing resource records.
     <div class="resource-formfield-field">{{{field|Resource description|input type=textarea|autogrow|class=form-control w-100}}}</div>
   </div>
   <div class="resource-formfield">
-    <div class="resource-formfield-label">Resource type</div>
-    <div class="resource-formfield-field">{{{field|Resource type|input type=tokens|values from property=Resource type|max values=1}}}</div>
-  </div>
-  <div class="resource-formfield">
     <div class="resource-formfield-label">Resource name</div>
     <div class="resource-formfield-field">{{{field|Resource name|input type=tokens|values from property=Resource name|max values=1}}}</div>
   </div>
   <div class="resource-formfield">
-    <div class="resource-formfield-label">URL *</div>
-    <div class="resource-formfield-field">{{{field|Resource URL|input type=text|mandatory|class=form-control w-100}}}</div>
+    <div class="resource-formfield-label">Resource type</div>
+    <div class="resource-formfield-field">{{{field|Resource type|input type=tokens|values from property=Resource type|max values=1}}}</div>
+  </div>
+  <div class="resource-formfield">
+    <div class="resource-formfield-label">Resource link type **</div>
+    <div class="resource-formfield-field">{{{field|Resource link type|input type=dropdown|property=Resource link type|show on select=URL=>res-url;Wiki page=>res-wiki;Local file=>res-file;|mandatory|default=Local file|class=mb-2}}}</div>
+  </div>
+  <div id="res-url" class="resource-formfield">
+    <div class="resource-formfield-label"></div>
+    <div class="resource-formfield-field">{{{field|Resource URL|input type=text|mandatory|class=form-control w-100|placeholder=Valid URL}}}</div>
+  </div>
+  <div id="res-wiki" class="resource-formfield">
+    <div class="resource-formfield-label"></div>
+    <div class="resource-formfield-field">{{{field|Resource page|input type=tokens|max values=1|mandatory|values from namespace=Main|class=form-control w-100|placeholder=Main Page}}}</div>
+  </div>
+  <div id="res-file" class="resource-formfield">
+    <div class="resource-formfield-label"></div>
+    <div class="resource-formfield-field">{{{field|Resource file|input type=text|mandatory|class=form-control w-100|uploadable|placeholder=Filename.ext}}}</div>
   </div>
   <div class="resource-formfield">
     <div class="resource-formfield-label">Categories</div>
