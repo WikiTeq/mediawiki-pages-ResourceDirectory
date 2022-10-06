@@ -1,5 +1,10 @@
 <includeonly>{{#set:
-|Resource URL={{{Resource URL|}}}
+|Resource URL={{#switch:{{{Resource link type|}}}
+   |Local file={{filepath:{{PAGENAME:{{{Resource file|}}}}}}}
+   |Wiki page={{fullurl:{{{Resource page|}}}}}
+   |#default={{{Resource URL|}}}
+ }}
+|Resource link type={{{Resource link type|}}}
 |Resource description={{{Resource description|}}}
 |Resource type={{{Resource type|}}}
 |Resource name={{{Resource name|}}}
@@ -20,13 +25,17 @@
      |<div class="resource-card-authors">by&nbsp;{{{Authors|}}}</div>
    }}<!--
 
+--><div class="resource-card-url plainlinks">{{#switch:{{{Resource link type|}}}
+   |Local file=[[File:{{PAGENAME:{{{Resource file|}}}}}|thumb|left]]
+   |Wiki page=[[{{{Resource page|}}}|<span class="mw-ui-button mb-3">View resource</span>]]
+   |#default=[{{{Resource URL|}}} <span class="mw-ui-button mb-3">View resource</span>]
+ }}</div><!--
+
 -->{{#if: {{{Resource description|}}}
      |<div class="resource-card-description">
 {{{Resource description|}}}
       </div>
    }}<!--
-
---><div class="resource-card-url plainlinks">[{{{Resource URL|}}} <span class="mw-ui-button">View resource</span>]</div><!--
 
 --><div class="resource-card"><!--
 
