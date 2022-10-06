@@ -1,0 +1,9 @@
+This is a property of type [[Has type::Text]].
+
+The allowed values for this property are:
+* [[Allows value::URL]]
+* [[Allows value::Wiki page]]
+* [[Allows value::Local file]]
+
+
+<noinclude>[[Category:Resource package]]</noinclude>
