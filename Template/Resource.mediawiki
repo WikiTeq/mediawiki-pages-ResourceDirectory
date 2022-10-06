@@ -42,15 +42,17 @@
 -->{{#arraymap: Resource type; Resource name; {{:Project:Resource custom lists}}
      |;
      |@@@
-     |<div class="resource-card-row">
-        <div class="resource-card-row-label">@@@</div>
-        <div class="resource-card-row-value">{{#queryformlink: form=Resource query
-            |link text={{{@@@|}}}
-            |Resource query[@@@]={{{@@@|}}}
-            |Resource query[Filter]=@@@
-            |_run=1
-          }}</div>
-      </div>
+     |{{#if: {{{@@@|}}}
+        |<div class="resource-card-row">
+           <div class="resource-card-row-label">@@@</div>
+           <div class="resource-card-row-value">{{#queryformlink: form=Resource query
+               |link text={{{@@@|}}}
+               |Resource query[@@@]={{{@@@|}}}
+               |Resource query[Filter]=@@@
+               |_run=1
+             }}</div>
+         </div>
+       }}
      |
    }}<!--
 
