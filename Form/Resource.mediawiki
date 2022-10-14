@@ -46,10 +46,13 @@ This is a form for adding or editing resource records.
   <div class="resource-formfield">
     <div class="resource-formfield-label">Keywords</div>
     <div class="resource-formfield-field">{{{field|Keywords|input type=tokens|values from property=Resource keyword|list|delimiter=;}}}</div>
-  </div>
+  </div><!--
+  
+  -->{{#ifexist: Project:Resource custom lists|
   <div class="resource-form-section-heading">[[Project:Resource custom lists|Custom lists]] {{#info: Follow the link to add names of properties containing fixed lists of values. They will appear below.}}</div>
 {{Resource custom lists|{{:Project:Resource custom lists}}}}
 </div>
+}}
 {{{end template}}}
 {{{for template|Resource authors|multiple|embed in field=Resource[Authors]|add button text=Add author|minimum instances=1}}}<div class="resource-form">
   <div class="resource-formfield">
