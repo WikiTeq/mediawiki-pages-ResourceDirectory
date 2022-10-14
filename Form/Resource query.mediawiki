@@ -9,7 +9,7 @@ Quick resources filter.
 {{{field|Resource name|hidden}}}
 {{{field|Resource category|hidden}}}
 {{{field|Resource keyword|hidden}}}
-{{Resource custom lists query|{{:Project:Resource custom lists}}}}
+{{#ifexist: Project:Resource custom lists|{{Resource custom lists query|{{:Project:Resource custom lists}}}}}}
 {{{field|Filter|hidden}}}
 {{{end template}}}
 </includeonly>
