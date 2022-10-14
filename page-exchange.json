@@ -35,16 +35,6 @@
                     "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/MediaWiki%2FResource.css.mediawiki"
                 },
                 {
-                    "name": "Resource custom lists",
-                    "namespace": "NS_PROJECT",
-                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Project%2FResource%20custom%20lists.mediawiki"
-                },
-                {
-                    "name": "Level",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FLevel.mediawiki"
-                },
-                {
                     "name": "Resource author",
                     "namespace": "SMW_NS_PROPERTY",
                     "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ResourceDirectory\/master\/Property%2FResource%20author.mediawiki"
