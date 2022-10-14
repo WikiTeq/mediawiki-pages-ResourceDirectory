@@ -8,6 +8,9 @@ Semantic structure, forms and templates for extendable resource annotation and b
 * Extension:Arrays
 * Extension:PageExchange or Extension:PagePort
 
+# Recommended
+* Extension:PdfHandler
+
 # Setup
 
 ## via PagePort
