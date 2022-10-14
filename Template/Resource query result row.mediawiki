@@ -41,7 +41,20 @@
      |{{{Resource keyword|}}},{{#arrayprint: keywords|,}}
      |,
      |unique,sort=asc
-   }}
+   }}<!--
+
+-->{{#ifexist: Project:Resource custom lists
+     |{{#arraymap: {{:Project:Resource custom lists}}
+        |;
+        |$$$
+        |{{#arraydefine: {{#replace:{{lc:$$$}}| |_}}
+           |{{#show: {{{Resource|}}} |?$$$ }},{{#arrayprint: {{#replace:{{lc:$$$}}| |_}}|,}}
+           |,
+           |unique,sort=asc,
+         }}
+        |
+      }}
+    }}
 </div></includeonly><noinclude>
 [[Category:Resource package]]
 </noinclude>
