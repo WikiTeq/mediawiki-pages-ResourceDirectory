@@ -55,6 +55,27 @@
     }}
 }}
       </ul>
+{{#ifexist: Project:Resource custom lists
+  |{{#arraymap: {{:Project:Resource custom lists}}
+     |;
+     |$$$
+     |{{#ifexpr: 0{{#arraysize:{{#replace:{{lc:$$$}}| |_}}}} > 0
+        |<div class="h5">$$$</div><ul>
+{{#arrayprint:{{#replace:{{lc:$$$}}| |_}}
+  |
+  |@@@
+  |{{#ifeq: @@@|{{{{{{Filter|}}}|}}}||<li>{{#queryformlink: form=Resource query
+     |link text=@@@
+     |Resource query[$$$]=@@@
+     |Resource query[Filter]=$$$
+     |_run=1
+    }}</li>
+  }}
+}}</ul>
+    }}
+    |
+  }}
+}}
     </div>
   </div>
 </div>
