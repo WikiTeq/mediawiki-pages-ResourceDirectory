@@ -41,7 +41,7 @@
 
 --><div class="resource-card"><!--
 
--->{{#arraymap: Resource type; Resource name; {{#ifexist: Project:Resource custom list |{{:Project:Resource custom lists}}}}
+-->{{#arraymap: Resource type; Resource name; {{#ifexist: Project:Resource custom lists |{{:Project:Resource custom lists}}}}
      |;
      |@@@
      |{{#if: {{{@@@|}}}
