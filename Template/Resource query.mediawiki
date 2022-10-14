@@ -8,7 +8,7 @@
 <div class="resource-query">
 <div class="resource-query-body">
 {{#ask:[[Category:Resources]]
-{{#arraymap:Resource author;Resource type;Resource name;Resource category;Resource keyword;{{:Project:Resource custom lists}}
+{{#arraymap:Resource author;Resource type;Resource name;Resource category;Resource keyword;{{#ifexist:Project:Resource custom lists|{{:Project:Resource custom lists}}}}
   |;
   |@@@
   |{{#if: {{{@@@|}}}
