@@ -29,7 +29,9 @@ This is a form for advanced filtering of resource records.
     <div class="resource-formfield-label">Keywords</div>
     <div class="resource-formfield-field">{{{field|Resource keyword|input type=tokens|values from property=Resource keyword|list|delimiter=;}}}</div>
   </div>
-{{#ifexist:Project:Resource custom lists|{{Resource custom lists|{{:Project:Resource custom lists}}}}}}
+{{#ifexist:Project:Resource custom lists
+  |{{Resource custom lists|{{:Project:Resource custom lists}}}}
+}}
 </div>
 {{{end template}}}
 
