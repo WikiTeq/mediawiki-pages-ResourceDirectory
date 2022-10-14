@@ -40,10 +40,10 @@ Navigate to `Form:Resource` to start adding resources. Necessary links for data 
 # Custom dropdowns
 The semantic structure and the data input form can be easily extended to use custom sets of values (dropdowns). 
 
-1) First create desired properties of type `Text` and define allowed values using `[[Allows value::...]]` built-in property. (See `Property:Level` as example).
-2) Navigate to `Project:Resource custom lists` and list names of your custom properties delimited with a semicolon (`;`), for example:
+1) First create desired properties of type `Text` and define allowed values using `[[Allows value::...]]` built-in property.
+2) Then create `Project:Resource custom lists` and put names of your custom properties there, delimited with a semicolon (`;`), for example:
 ```php
-Level; MyPropertyName; MyOtherPropertyName
+MyPropertyName; MyOtherPropertyName
 ```
 
 
