@@ -12,11 +12,13 @@
 |Resource keyword={{{Keywords|}}}|+sep=;
 }}<!--
 
--->{{#arraymap: {{:Project:Resource custom lists}}
-     |;
-     |@@@
-     |{{#set: @@@={{{@@@|}}}}}
-     |
+-->{{#ifexist: Project:Resource custom lists
+     |{{#arraymap: {{:Project:Resource custom lists}}
+        |;
+        |@@@
+        |{{#set: @@@={{{@@@|}}}}}
+        |
+      }}
    }}<!--
 
 -->[[Category:Resources]]<!--
@@ -39,7 +41,7 @@
 
 --><div class="resource-card"><!--
 
--->{{#arraymap: Resource type; Resource name; {{:Project:Resource custom lists}}
+-->{{#arraymap: Resource type; Resource name; {{#ifexist: Project:Resource custom list |{{:Project:Resource custom lists}}}}
      |;
      |@@@
      |{{#if: {{{@@@|}}}
