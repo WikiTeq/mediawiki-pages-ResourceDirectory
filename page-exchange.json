@@ -5,7 +5,7 @@
     "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-ResourceDirectory",
     "packages": {
         "ResourceDirectory": {
-            "globalID": "1660770722",
+            "globalID": "com.wikiteq.ResourceDirectory",
             "description": "Extendable resource description and filtering",
             "version": "0.1",
             "pages": [
