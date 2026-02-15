@@ -6,6 +6,7 @@ Semantic structure, forms and templates for extendable resource annotation and b
 * Extension:SemanticMediaWiki
 * Extension:PageForms
 * Extension:Arrays
+* Extension:ParserFunctions (with `$wgPFEnableStringFunctions = true` for template sanitization)
 * Extension:PageExchange or Extension:PagePort
 
 # Recommended
