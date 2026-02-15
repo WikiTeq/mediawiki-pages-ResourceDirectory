@@ -12,14 +12,14 @@
 --><div class="resource-card-author"><!--
 
 -->{{#queryformlink: form=Resource query
-     |link text={{{Resource author|}}}
-     |Resource query[Resource author]={{{Resource author|}}}
+     |link text={{#replace:{{#replace:{{{Resource author|}}}|<|&lt;}}|>|&gt;}}
+     |Resource query[Resource author]={{#replace:{{#replace:{{#replace:{{{Resource author|}}}|]||}}|[||}}|{{!}}||}}
      |Resource query[Filter]=Resource author
      |_run=1
    }}<!--
 
 -->{{#if:{{{Resource author info|}}}
-     |,&#32;{{{Resource author info|}}}
+     |,&#32;{{#replace:{{#replace:{{{Resource author info|}}}|<|&lt;}}|>|&gt;}}
    }}<!--
 
 --></div></includeonly><noinclude>
