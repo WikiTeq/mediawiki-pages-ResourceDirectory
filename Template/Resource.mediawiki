@@ -5,9 +5,9 @@
    |#default={{{Resource URL|}}}
  }}
 |Resource link type={{{Resource link type|}}}
-|Resource description={{{Resource description|}}}
-|Resource type={{{Resource type|}}}
-|Resource name={{{Resource name|}}}
+|Resource description={{#replace:{{#replace:{{#replace:{{{Resource description|}}}|]|}}|[|}}|{{!}}|}}
+|Resource type={{#replace:{{#replace:{{#replace:{{{Resource type|}}}|]|}}|[|}}|{{!}}|}}
+|Resource name={{#replace:{{#replace:{{#replace:{{{Resource name|}}}|]|}}|[|}}|{{!}}|}}
 |Resource category={{{Categories|}}}|+sep=;
 |Resource keyword={{{Keywords|}}}|+sep=;
 }}<!--
@@ -16,7 +16,7 @@
      |{{#arraymap: {{:Project:Resource custom lists}}
         |;
         |@@@
-        |{{#set: @@@={{{@@@|}}}}}
+        |{{#set: @@@={{#replace:{{#replace:{{#replace:{{{@@@|}}}|]|}}|[|}}|{{!}}|}}}}
         |
       }}
    }}<!--
@@ -24,7 +24,7 @@
 -->[[Category:Resources]]<!--
 
 -->{{#if: {{{Authors|}}}
-     |<div class="resource-card-authors">by&nbsp;{{{Authors|}}}</div>
+     |<div class="resource-card-authors">by&nbsp;{{#replace:{{#replace:{{{Authors|}}}|<|&lt;}}|>|&gt;}}</div>
    }}<!--
 
 --><div class="resource-card-url plainlinks">{{#switch:{{{Resource link type|}}}
@@ -35,7 +35,7 @@
 
 -->{{#if: {{{Resource description|}}}
      |<div class="resource-card-description">
-{{{Resource description|}}}
+{{#replace:{{#replace:{{{Resource description|}}}|<|&lt;}}|>|&gt;}}
       </div>
    }}<!--
 
@@ -48,8 +48,8 @@
         |<div class="resource-card-row">
            <div class="resource-card-row-label">@@@</div>
            <div class="resource-card-row-value">{{#queryformlink: form=Resource query
-               |link text={{{@@@|}}}
-               |Resource query[@@@]={{{@@@|}}}
+               |link text={{#replace:{{#replace:{{{@@@|}}}|<|&lt;}}|>|&gt;}}
+               |Resource query[@@@]={{#replace:{{#replace:{{#replace:{{{@@@|}}}|]|}}|[|}}|{{!}}|}}
                |Resource query[Filter]=@@@
                |_run=1
              }}</div>
@@ -64,8 +64,8 @@
            |;
            |$$$
            |{{#queryformlink: form=Resource query
-              |link text=$$$
-              |Resource query[Resource category]=$$$
+              |link text={{#replace:{{#replace:$$$|<|&lt;}}|>|&gt;}}
+              |Resource query[Resource category]={{#replace:{{#replace:{{#replace:$$$|]|}}|[|}}|{{!}}|}}
               |Resource query[Filter]=Resource category
               |_run=1
             }}
@@ -80,8 +80,8 @@
            |;
            |$$$
            |{{#queryformlink: form=Resource query
-              |link text=$$$
-              |Resource query[Resource keyword]=$$$
+              |link text={{#replace:{{#replace:$$$|<|&lt;}}|>|&gt;}}
+              |Resource query[Resource keyword]={{#replace:{{#replace:{{#replace:$$$|]|}}|[|}}|{{!}}|}}
               |Resource query[Filter]=Resource keyword
               |_run=1
             }}

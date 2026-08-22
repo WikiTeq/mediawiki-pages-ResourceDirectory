@@ -6,7 +6,7 @@
   |;
   |@@@
   |{{#if: {{{@@@|}}}
-     |[[@@@::{{#replace:{{{@@@|}}}|;|{{!}}{{!}}}}]]
+     |[[@@@::{{#replace:{{#replace:{{#replace:{{#replace:{{{@@@|}}}|]|}}|[|}}|{{!}}|}}|;|{{!}}{{!}}}}]]
    }}
   |
 }}
@@ -33,8 +33,8 @@
   |
   |@@@
   |{{#ifeq: @@@|{{{{{{Filter|}}}|}}}||<li>{{#queryformlink: form=Resource query
-         |link text=@@@
-         |Resource query[Resource category]=@@@
+         |link text={{#replace:{{#replace:@@@|<|&lt;}}|>|&gt;}}
+         |Resource query[Resource category]={{#replace:{{#replace:{{#replace:@@@|]|}}|[|}}|{{!}}|}}
          |Resource query[Filter]=Resource category
          |_run=1
        }}</li>
@@ -47,8 +47,8 @@
   |
   |@@@
   |{{#ifeq: @@@|{{{{{{Filter|}}}|}}}||<li>{{#queryformlink: form=Resource query
-         |link text=@@@
-         |Resource query[Resource keyword]=@@@
+         |link text={{#replace:{{#replace:@@@|<|&lt;}}|>|&gt;}}
+         |Resource query[Resource keyword]={{#replace:{{#replace:{{#replace:@@@|]|}}|[|}}|{{!}}|}}
          |Resource query[Filter]=Resource keyword
          |_run=1
        }}</li>
@@ -65,8 +65,8 @@
   |
   |@@@
   |{{#ifeq: @@@|{{{{{{Filter|}}}|}}}||<li>{{#queryformlink: form=Resource query
-     |link text=@@@
-     |Resource query[$$$]=@@@
+     |link text={{#replace:{{#replace:@@@|<|&lt;}}|>|&gt;}}
+     |Resource query[$$$]={{#replace:{{#replace:{{#replace:@@@|]|}}|[|}}|{{!}}|}}
      |Resource query[Filter]=$$$
      |_run=1
     }}</li>
