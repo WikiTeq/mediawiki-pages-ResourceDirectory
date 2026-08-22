@@ -118,7 +118,8 @@
             "requiredExtensions": [
 		"SemanticMediaWiki",
 		"PageForms",
-		"Arrays"
+		"Arrays",
+		"ParserFunctions"
 	    ]
         }
     }

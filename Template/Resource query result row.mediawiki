@@ -6,8 +6,8 @@
   |,
   |@@@
   |<div class="resource-card-author">{{#queryformlink: form=Resource query
-     |link text=@@@
-     |Resource query[Resource author]=@@@
+     |link text={{#replace:{{#replace:@@@|<|&lt;}}|>|&gt;}}
+     |Resource query[Resource author]={{#replace:{{#replace:{{#replace:@@@|]|}}|[|}}|{{!}}|}}
      |Resource query[Filter]=Resource author
      |_run=1
    }}</div>
@@ -15,21 +15,21 @@
 }}</div>
   <div class="resource-card-source">
     <div class="badge badge-light">{{#queryformlink: form=Resource query
-     |link text={{{Resource type|}}}
-     |Resource query[Resource type]={{{Resource type|}}}
+     |link text={{#replace:{{#replace:{{{Resource type|}}}|<|&lt;}}|>|&gt;}}
+     |Resource query[Resource type]={{#replace:{{#replace:{{#replace:{{{Resource type|}}}|]|}}|[|}}|{{!}}|}}
      |Resource query[Filter]=Resource type
      |_run=1
    }}</div>
     <div>{{#queryformlink: form=Resource query
-     |link text={{{Resource name|}}}
-     |Resource query[Resource name]={{{Resource name|}}}
+     |link text={{#replace:{{#replace:{{{Resource name|}}}|<|&lt;}}|>|&gt;}}
+     |Resource query[Resource name]={{#replace:{{#replace:{{#replace:{{{Resource name|}}}|]|}}|[|}}|{{!}}|}}
      |Resource query[Filter]=Resource name
      |_run=1
    }}</div>
   </div>
 </div><!--
 
--->{{{Resource description|}}}<!--
+-->{{#replace:{{#replace:{{{Resource description|}}}|<|&lt;}}|>|&gt;}}<!--
 
 -->{{#arraydefine: categories
      |{{{Resource category|}}},{{#arrayprint: categories|,}}
